@@ -52,6 +52,7 @@ namespace State {
 
       private:
         std::vector<UP<CApp>>                 m_apps;
+        std::vector<int>                      m_pidsTermedNoWindows;
 
         std::chrono::steady_clock::time_point m_started = std::chrono::steady_clock::now();
     };
